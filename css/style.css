@@ -85,16 +85,62 @@ body {
     display: inline-block;
 }
  
-/* Services  */
+/* Services Section */
+/* Services Section */
+
 
 .services .card {
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-    text-align: center;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to right, #fdfdfd, #edeff4);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure all cards have the same height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-top-space {
+  width: 50px;
+  height: 90px;
+margin-bottom: 20px;
+}
+
+.card-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+/* Hidden by default for animation */
+.service-card-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Shown when visible */
+.service-card-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 2rem;
+  }
+}
 /* contact-form  */
  
 .contact-form input,
