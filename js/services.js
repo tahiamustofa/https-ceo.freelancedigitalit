@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
           setTimeout(() => {
             entry.target.classList.add("visible");
           }, index * 200); // 200ms delay for each card
-          // observer.unobserve(entry.target); // শুধুমাত্র একবার অ্যানিমেশন চাইলে এই লাইনটি রাখুন
+          // observer.unobserve(entry.target); 
         }
       });
     },

@@ -18,7 +18,10 @@ body {
     max-width: 520px;
     margin: 1rem auto;
 }
-
+.bg-blue{
+    background-color: #367af0;
+    
+}
 .bg-orange {
     background-color: #ff4d00;
 }
