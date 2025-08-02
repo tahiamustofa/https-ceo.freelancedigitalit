@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
 </head>
 
@@ -49,11 +51,11 @@
 
         </div>
 
-        <!-- Contact Info -->
-        <div class="px-md-5 mt-5">
+        <!-- Contact Info Section -->
+        <div class="px-4 px-md-5 mt-5">
             <div class="contact-list">
 
-                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right">
                     <div class="icon bg-success text-white"><i class="bi bi-telephone-fill"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">Call</div>
@@ -61,15 +63,17 @@
                     </div>
                 </div>
 
-                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right"
+                    data-aos-delay="100">
                     <div class="icon bg-success text-white "><i class="bi bi-whatsapp"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">WhatsApp</div>
-                        <a href="#" class="contact-link text-decoration-none">Connect on WhatsApp</a>
+                        <a href="https://api.whatsapp.com/" class="contact-link text-decoration-none">Connect on WhatsApp</a>
                     </div>
                 </div>
 
-                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right"
+                    data-aos-delay="200">
                     <div class="icon bg-danger text-white"><i class="bi bi-envelope-fill"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">Email</div>
@@ -78,7 +82,8 @@
                     </div>
                 </div>
 
-                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right"
+                    data-aos-delay="300">
                     <div class="icon bg-primary text-white"><i class="bi bi-globe2"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">Website</div>
@@ -86,15 +91,17 @@
                     </div>
                 </div>
 
-                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right"
+                    data-aos-delay="400">
                     <div class="icon bg-primary text-white"><i class="bi bi-facebook"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">Facebook</div>
-                        <a href="#" class="contact-link text-decoration-none">View Facebook Profile</a>
+                        <a href="https://www.facebook.com/" class="contact-link text-decoration-none">View Facebook Profile</a>
                     </div>
                 </div>
 
-                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right"
+                    data-aos-delay="500">
                     <div class="icon bg-danger text-white"><i class="bi bi-instagram"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">Instagram</div>
@@ -102,7 +109,8 @@
                     </div>
                 </div>
 
-                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right"
+                    data-aos-delay="600">
                     <div class="icon bg-danger text-white"><i class="bi bi-youtube"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">YouTube</div>
@@ -110,7 +118,8 @@
                     </div>
                 </div>
 
-                <div class="contact-item d-flex align-items-start mb-3 p-3 rounded">
+                <div class="contact-item d-flex align-items-center mb-3 p-3 rounded" data-aos="fade-right"
+                    data-aos-delay="700">
                     <div class="icon bg-dark text-white mt-1"><i class="bi bi-geo-alt-fill"></i></div>
                     <div class="ms-2">
                         <div class="fw-semibold">Location</div>
@@ -122,159 +131,151 @@
             </div>
         </div>
 
-  <!-- Image Gallery -->
-        
-        <div class="p-3">
-            <h5 class="text-center mb-4">Image Gallery</h5>
-            <div class="row g-2 gallery">
-                <div class="col-6 gallery-wrapper">
-                    <img src="images/1.webp" class="img-fluid gallery-img" alt="">
-                </div>
-                <div class="col-6 gallery-wrapper">
-                    <img src="images/1.webp" class="img-fluid gallery-img" alt="">
-                </div>
-                <div class="col-6 gallery-wrapper">
-                    <img src="images/1.webp" class="img-fluid gallery-img" alt="">
-                </div>
-                
-                
-                <div class="col-6 gallery-wrapper">
-                    <img src="images/1.webp" class="img-fluid gallery-img" alt="">
-                </div>
-            </div>
-            <p class="text-center mt-4 small text-black text-decoration-none">
-                <a href="#" id="viewAll" class="text-black text-decoration-none fw-bold">View All Images (6)</a>
-            </p>
-        </div>
-
-       <!-- Lightbox Popup -->
-<div id="lightbox" class="lightbox">
-    <div class="lightbox-container">
-        <div class="popup-header">
-            <h4>Image Gallery</h4>
-        </div>
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div class="image-intro" id="image-intro"></div>
-        <a class="prev text-decoration-none"><i class="fa-solid fa-arrow-left"></i></a>
-        <a class="next text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
+ <!-- Image Gallery -->
+<div class="p-3">
+  <h5 class="text-center mb-4" data-aos="fade-down">Image Gallery</h5>
+  <div class="row g-2 gallery">
+    <div class="col-6 gallery-wrapper" data-aos="fade-down" data-aos-delay="100">
+      <img src="images/1.webp" class="img-fluid gallery-img" alt="">
     </div>
+    <div class="col-6 gallery-wrapper" data-aos="fade-down" data-aos-delay="200">
+      <img src="images/1.webp" class="img-fluid gallery-img" alt="">
+    </div>
+    <div class="col-6 gallery-wrapper" data-aos="fade-up" data-aos-delay="300">
+      <img src="images/1.webp" class="img-fluid gallery-img" alt="">
+    </div>
+    <div class="col-6 gallery-wrapper" data-aos="fade-up" data-aos-delay="400">
+      <img src="images/1.webp" class="img-fluid gallery-img" alt="">
+    </div>
+  </div>
+
+  <p class="text-center mt-4 small text-black text-decoration-none">
+    <a href="#" id="viewAll" class="text-black text-decoration-none fw-bold">View All Images (6)</a>
+  </p>
 </div>
 
-    
 
-    <script>
-        // Complete Updated Gallery JavaScript
-        document.addEventListener("DOMContentLoaded", function () {
-            const lightbox = document.getElementById("lightbox");
-            const lightboxImg = document.getElementById("lightbox-img");
-            const imageIntro = document.getElementById("image-intro");
-            const images = document.querySelectorAll(".gallery-img");
-            const viewAll = document.getElementById("viewAll");
-            const closeBtn = document.querySelector(".close");
-            const nextBtn = document.querySelector(".next");
-            const prevBtn = document.querySelector(".prev");
+        <!-- Lightbox Popup -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-container">
+                <div class="popup-header">
+                    <h4>Image Gallery</h4>
+                </div>
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <div class="image-intro" id="image-intro"></div>
+                <a class="prev text-decoration-none"><i class="fa-solid fa-arrow-left"></i></a>
+                <a class="next text-decoration-none"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
 
-            let currentIndex = 0;
+        <script>
+            // Complete Updated Gallery JavaScript
+            document.addEventListener("DOMContentLoaded", function () {
+                const lightbox = document.getElementById("lightbox");
+                const lightboxImg = document.getElementById("lightbox-img");
+                const imageIntro = document.getElementById("image-intro");
+                const images = document.querySelectorAll(".gallery-img");
+                const viewAll = document.getElementById("viewAll");
+                const closeBtn = document.querySelector(".close");
+                const nextBtn = document.querySelector(".next");
+                const prevBtn = document.querySelector(".prev");
 
-            // Different intro lines for each image
-            const introLines = [
-                "স্টার সেভার বা চ্যালেঞ্জ পূরণ করার জন্য স্টার কিনুন",
-                "বিভিন্ন গিফট এবং রিওয়ার্ড পেতে স্টার ব্যবহার করুন",
-                "আপনার পছন্দের হোস্টকে সাপোর্ট করুন স্টার দিয়ে",
-                "প্রিমিয়াম ফিচার আনলক করুন স্টার দিয়ে",
-                "দৈনিক বোনাস এবং অফার পেতে স্টার সংগ্রহ করুন",
-                "লাইভ স্ট্রিমে বিশেষ ইফেক্ট ব্যবহার করুন"
-            ];
+                let currentIndex = 0;
 
-            function showLightbox(index, direction = 'fade') {
-                currentIndex = index;
-                lightbox.classList.add('show');
-                
-                // Previous animation classes remove করি
-                lightboxImg.classList.remove('slide-in-right', 'slide-in-left', 'fade-in');
-                
-                // Force reflow
-                void lightboxImg.offsetWidth;
-                
-                // Image source এবং intro text change করি
-                lightboxImg.src = images[currentIndex].src;
-                imageIntro.textContent = introLines[currentIndex] || "বিশেষ অফার এবং রিওয়ার্ড পেতে আজই যোগ দিন";
-                
-                // Animation class add করি
-                if (direction === 'next') {
-                    lightboxImg.classList.add('slide-in-right');
-                } else if (direction === 'prev') {
-                    lightboxImg.classList.add('slide-in-left');
-                } else {
-                    lightboxImg.classList.add('fade-in');
+                // Different intro lines for each image
+                const introLines = [
+                    "স্টার সেভার বা চ্যালেঞ্জ পূরণ করার জন্য স্টার কিনুন",
+                    "বিভিন্ন গিফট এবং রিওয়ার্ড পেতে স্টার ব্যবহার করুন",
+                    "আপনার পছন্দের হোস্টকে সাপোর্ট করুন স্টার দিয়ে",
+                    "প্রিমিয়াম ফিচার আনলক করুন স্টার দিয়ে",
+                    "দৈনিক বোনাস এবং অফার পেতে স্টার সংগ্রহ করুন",
+                    "লাইভ স্ট্রিমে বিশেষ ইফেক্ট ব্যবহার করুন"
+                ];
+
+                function showLightbox(index, direction = 'fade') {
+                    currentIndex = index;
+                    lightbox.classList.add('show');
+
+                    // Previous animation classes remove করি
+                    lightboxImg.classList.remove('slide-in-right', 'slide-in-left', 'fade-in');
+
+                    // Force reflow
+                    void lightboxImg.offsetWidth;
+
+                    // Image source এবং intro text change করি
+                    lightboxImg.src = images[currentIndex].src;
+                    imageIntro.textContent = introLines[currentIndex] || "বিশেষ অফার এবং রিওয়ার্ড পেতে আজই যোগ দিন";
+
+                    // Animation class add করি
+                    if (direction === 'next') {
+                        lightboxImg.classList.add('slide-in-right');
+                    } else if (direction === 'prev') {
+                        lightboxImg.classList.add('slide-in-left');
+                    } else {
+                        lightboxImg.classList.add('fade-in');
+                    }
                 }
-            }
 
-            // Image এবং hover icon উভয়েই click করা যাবে
-            images.forEach((img, index) => {
-                img.addEventListener("click", () => showLightbox(index));
-            });
+                // Image এবং hover icon উভয়েই click করা যাবে
+                images.forEach((img, index) => {
+                    img.addEventListener("click", () => showLightbox(index));
+                });
 
-            // Gallery wrapper এ click event (hover icon এর জন্য)
-            document.querySelectorAll('.gallery-wrapper').forEach((wrapper, index) => {
-                wrapper.addEventListener("click", (e) => {
-                    // Image ছাড়া অথবা hover area তে click করলে
-                    if (e.target === wrapper || e.target.classList.contains('gallery-img')) {
-                        showLightbox(index);
+                // Gallery wrapper এ click event (hover icon এর জন্য)
+                document.querySelectorAll('.gallery-wrapper').forEach((wrapper, index) => {
+                    wrapper.addEventListener("click", (e) => {
+                        // Image ছাড়া অথবা hover area তে click করলে
+                        if (e.target === wrapper || e.target.classList.contains('gallery-img')) {
+                            showLightbox(index);
+                        }
+                    });
+                });
+
+                // View all click event
+                viewAll.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    showLightbox(0);
+                });
+
+                // Close button
+                closeBtn.addEventListener("click", () => {
+                    lightbox.classList.remove('show');
+                });
+
+                // Next button with slide effect
+                nextBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    showLightbox(currentIndex, 'next');
+                });
+
+                // Previous button with slide effect
+                prevBtn.addEventListener("click", () => {
+                    currentIndex = (currentIndex - 1 + images.length) % images.length;
+                    showLightbox(currentIndex, 'prev');
+                });
+
+                // Keyboard navigation
+                document.addEventListener('keydown', (e) => {
+                    if (lightbox.classList.contains('show')) {
+                        if (e.key === 'Escape') {
+                            lightbox.classList.remove('show');
+                        } else if (e.key === 'ArrowRight') {
+                            nextBtn.click();
+                        } else if (e.key === 'ArrowLeft') {
+                            prevBtn.click();
+                        }
+                    }
+                });
+
+                // Click outside to close
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox) {
+                        lightbox.classList.remove('show');
                     }
                 });
             });
-
-            // View all click event
-            viewAll.addEventListener("click", (e) => {
-                e.preventDefault();
-                showLightbox(0);
-            });
-
-            // Close button
-            closeBtn.addEventListener("click", () => {
-                lightbox.classList.remove('show');
-            });
-
-            // Next button with slide effect
-            nextBtn.addEventListener("click", () => {
-                currentIndex = (currentIndex + 1) % images.length;
-                showLightbox(currentIndex, 'next');
-            });
-
-            // Previous button with slide effect
-            prevBtn.addEventListener("click", () => {
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
-                showLightbox(currentIndex, 'prev');
-            });
-
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                if (lightbox.classList.contains('show')) {
-                    if (e.key === 'Escape') {
-                        lightbox.classList.remove('show');
-                    } else if (e.key === 'ArrowRight') {
-                        nextBtn.click();
-                    } else if (e.key === 'ArrowLeft') {
-                        prevBtn.click();
-                    }
-                }
-            });
-
-            // Click outside to close
-            lightbox.addEventListener('click', (e) => {
-                if (e.target === lightbox) {
-                    lightbox.classList.remove('show');
-                }
-            });
-        });
-    </script>
-
-      
-
-   
-   
+        </script>
 
         <!-- Services -->
         <div class="p-3 services">
@@ -316,48 +317,53 @@
         </div>
 
 
-      
-<!-- QR Code Section -->
-    <div class="qr-container text-center">
-        <h5 class="qr-title mb-4">Download My QR Code</h5>
-        <div class="position-relative m-3">
-            <img src="images/Adriyan Ayon.webp" 
-                 alt="QR Code" 
-                 class="w-50 qrcode p-2 " />
+
+        <!-- QR Code Section -->
+        <div class="qr-container text-center">
+            <h5 class="qr-title mb-4">Download My QR Code</h5>
+            <div class="position-relative m-3">
+                <img src="images/Adriyan Ayon.webp" alt="QR Code" class="w-50 qrcode p-2 " />
+            </div>
+            <p class="download-text">Hover to preview • Click to download</p>
         </div>
-        <p class="download-text">Hover to preview • Click to download</p>
+
+
+        <script>
+            // Optional: Add click to download functionality
+            document.querySelector('.qrcode').addEventListener('click', function () {
+                // You can add download functionality here
+                console.log('QR Code clicked - Download initiated');
+
+                // Add a temporary scale effect on click
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+
+            // Optional: Add right-click context menu prevention for the QR code
+            document.querySelector('.qrcode').addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+        </script>
+
+
+
+
     </div>
 
-    
+    <!-- Footer -->
+    <footer class="w-100 d-flex align-items-center">
+        <p class="max-width py-1">&copy;2025 Freelance Digital IT. All Rights Reserved</p>
+    </footer>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Optional: Add click to download functionality
-        document.querySelector('.qrcode').addEventListener('click', function() {
-            // You can add download functionality here
-            console.log('QR Code clicked - Download initiated');
-            
-            // Add a temporary scale effect on click
-            this.style.transform = 'scale(0.95)';
-            setTimeout(() => {
-                this.style.transform = '';
-            }, 150);
-        });
-
-        // Optional: Add right-click context menu prevention for the QR code
-        document.querySelector('.qrcode').addEventListener('contextmenu', function(e) {
-            e.preventDefault();
+        AOS.init({
+            duration: 800,
+            once: true
         });
     </script>
-
-
-
-      
-    </div>
-
-      <!-- Footer -->
-        <footer class="w-100 d-flex align-items-center">
-            <p class="max-width py-1">&copy;2025 Freelance Digital IT. All Rights Reserved</p>
-        </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
